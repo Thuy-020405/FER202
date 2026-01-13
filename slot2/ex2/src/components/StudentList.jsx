@@ -1,17 +1,21 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import About from "./About"; 
-import listOfStudent from "../data/listOfStudent";
+import students from "../data/listOfStudent";
+import "../App.css";
 
 function StudentList() {
   return (
-    <Row>
-      {listOfStudent.map((stu) => (
-        <Col key={stu.id} md={4} className="mb-4">
-          <About student={stu} />
-        </Col>
+    <div className="student-list">
+      {students.map((s) => (
+        <div className="student-card" key={s.id}>
+          <img src={s.image} alt={s.name} />
+          <div className="student-info">
+            <h3>{s.name}</h3>
+            <p>ID: {s.id}</p>
+            <p>Age: {s.age}</p>
+            <p>Grade: {s.grade}</p>
+          </div>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 }
 
