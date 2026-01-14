@@ -1,0 +1,32 @@
+/* 1. Container bao quanh các thẻ Card */
+.student-list-container {
+    display: flex;             /* Hiển thị hàng ngang */
+    flex-wrap: wrap;          /* Tự động xuống dòng */
+    gap: 30px;                /* Khoảng cách giữa các card rộng hơn cho thoáng */
+    justify-content: center;   /* Căn giữa cả danh sách */
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+/* 2. Ép các ảnh trong Card có cùng chiều cao và không bị méo */
+.card-img-top {
+    height: 300px;            /* Tăng chiều cao ảnh cho giống mẫu */
+    object-fit: contain;      /* Giữ nguyên tỉ lệ hình ảnh nhân vật */
+    padding: 15px;            /* Tạo khoảng cách giữa ảnh và viền card */
+}
+
+/* 3. Căn giữa nội dung chữ bên trong Card */
+.card-body {
+    text-align: center;       /* Căn giữa tên, ID, và nút bấm */
+}
+
+/* 4. Tùy chỉnh thêm để Card trông giống mẫu hơn (đường viền nhạt) */
+.card {
+    border: 1px solid #eee !important; 
+    transition: transform 0.2s; /* Hiệu ứng khi di chuột vào */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Nhấc nhẹ card lên khi di chuột */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
