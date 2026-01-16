@@ -1,0 +1,76 @@
+/* Tổng thể trang web */
+body {
+  background-color: #212529; /* Màu nền tối đặc trưng của Bootstrap Dark */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hiệu ứng cho Navbar */
+.navbar {
+  border-bottom: 1px solid #444;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Tùy chỉnh Hero Carousel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Đổ bóng đen nhẹ sau chữ để dễ đọc hơn */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Định dạng các Card Pizza */
+.card {
+  background-color: #343a40 !important; /* Nền card tối hơn nền body */
+  color: white !important;
+  border: 1px solid #495057;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Hiệu ứng bay lên khi di chuột vào */
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* Màu cho giá tiền */
+.text-danger {
+  color: #ff4d4d !important;
+  font-weight: bold;
+}
+
+/* Form đặt bàn */
+.booking-section {
+  background-color: #2c3034;
+  padding: 60px 0;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1d20;
+  border-top: 1px solid #444;
+  margin-top: 50px;
+}
+
+.carousel-caption h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ffc107; /* Màu vàng cam đặc trưng của Pizza */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
