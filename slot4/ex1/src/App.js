@@ -1,25 +1,53 @@
+// src/App.js
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer'; // Đảm bảo tệp là Footer.jsx
-import HeroCarousel from './components/HeroCarousel'; // Đảm bảo tệp là HeroCarousel.jsx
-import PizzaList from './pages/PizzaList'; // Đừng quên import trang danh sách Pizza
-import { Container } from 'react-bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Import các thành phần từ đúng thư mục
+import AppNavbar from './components/AppNavbar';
+import Footer from './components/Footer';
+import HeroCarousel from './components/HeroCarousel'; 
+import BookingForm from './components/BookingForm';
+
+// Import các trang
+import PizzaList from './pages/PizzaList'; 
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <>
-      <HeroCarousel />
-      <div className="d-flex flex-column min-vh-100">
-        <Container fluid className="flex-grow-1">
-          <PizzaList /> {/* Thêm dòng này để hiển thị 10 cái Pizza bạn vừa tạo */}
-        </Container>
+    <Router>
+      <div className="bg-dark text-white min-vh-100 d-flex flex-column">
+        <AppNavbar />
+
+        <main className="flex-grow-1">
+          <Routes>
+            
+            <Route path="/" element={
+              <>
+                <HeroCarousel /> 
+                <div className="container py-5">
+                  <PizzaList />
+                </div>
+                <BookingForm />
+              </>
+            } />
+            
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </main>
+
         <Footer myProfile={{
           avatar: '/images/logo.jpg',
           name: 'Thuy PTD',
           email: 'phanthidinhthuy6.@gmail.com',
         }} />
       </div>
-    </>
+    </Router>
   );
 }
 

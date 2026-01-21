@@ -2,7 +2,7 @@ function Footer({ myProfile }) {
   return (
     <footer className="bg-light text-center text-lg-start">
       <div className="text-center p-3">
-        {/* hiển thị thông tin Avatar, Name và Email */}
+        
         <img
           src={myProfile.avatar}
           alt="Avatar"
