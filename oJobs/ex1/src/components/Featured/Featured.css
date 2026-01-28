@@ -1,0 +1,66 @@
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 20px;
+}
+
+.tag-btn {
+  padding: 6px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: #f0f0f0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Chia tỉ lệ 2:1 */
+  gap: 20px;
+}
+
+.main-featured-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.main-featured-card img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 25px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+.mini-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cv-builder-box {
+  background: #3f51b5;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cv-btn {
+  background: white;
+  color: #3f51b5;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}

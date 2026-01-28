@@ -1,0 +1,61 @@
+:root {
+  --ojobs-blue: #243a52;    /* Màu xanh đậm từ logo của bạn */
+  --ojobs-green: #00b14f;   /* Màu xanh lá cho các nút hành động */
+  --light-blue: #e3f2fd;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Phần Hero chứa Banner và Search đè lên */
+.hero-section {
+  position: relative;
+  background: linear-gradient(180deg, var(--light-blue) 0%, #fff 100%);
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/* Tùy chỉnh SearchBar đè lên Banner */
+.search-wrapper {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+
+.search-box {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
+
+.btn-search-main {
+  background: var(--ojobs-blue);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-search-main:hover {
+  background: #1a2b3d;
+}

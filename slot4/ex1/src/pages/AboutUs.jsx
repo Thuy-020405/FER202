@@ -33,7 +33,7 @@ function AboutUs() {
           </Col>
         </Row>
 
-        {/* 3. Phần các giá trị cốt lõi (Cards nhỏ gọn) */}
+        
         <Row className="text-center g-4 mt-5">
           <Col md={4}>
             <Card className="bg-white text-dark border-0 h-100 p-3 rounded-0 shadow-sm">

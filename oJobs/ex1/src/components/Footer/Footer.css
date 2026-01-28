@@ -1,0 +1,89 @@
+.footer-ojobs {
+  background-color: #b3d9f2; /* Màu xanh nhạt theo đúng mẫu bạn gửi */
+  padding: 50px 0 20px 0;
+  color: #243a52;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Chia 4 cột theo hình mẫu */
+  gap: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(36, 58, 82, 0.1);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-icon-small {
+  background: #243a52;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.footer-info h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dòng bản quyền cuối trang */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .brand-logo, .footer-info p {
+    justify-content: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,73 @@
+.search-wrapper {
+  position: relative;
+  z-index: 20;
+  margin-top: -40px; /* Đẩy thanh search đè lên Banner một chút */
+}
+
+.search-container {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 40px; /* Bo tròn cực đại giống TopCV */
+  border: 1px solid #e0e0e0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.search-input, .search-select {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.divider {
+  width: 1px;
+  height: 25px;
+  background-color: #ddd;
+}
+
+/* Nút tìm kiếm màu xanh lá */
+.btn-search {
+  background-color: #00b14f; /* Màu xanh đặc trưng */
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.btn-search:hover {
+  background-color: #009642;
+}
+
+.search-icon, .location-icon {
+  font-size: 18px;
+  color: #888;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .divider { display: none; }
+  .btn-search { width: 100%; margin-top: 10px; justify-content: center; }
+}

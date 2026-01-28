@@ -134,7 +134,7 @@ footer img {
   background: white;
 }
 
-/* Nút Buy đen hoàn toàn */
+
 .btn-dark.btn-buy {
     background-color: #000000 !important;
     border: none !important;
@@ -144,14 +144,14 @@ footer img {
     background-color: #333333 !important;
 }
 
-/* Nút View Details viền đen */
+
 .btn-outline-dark {
     border: 0.5 px solid #000000 !important;
     color: #000000 !important;
 }
 
 .navbar .btn-danger {
-    background-color: #d9534f !important; /* Màu đỏ đồng bộ */
+    background-color: #d9534f !important;
     border: none;
     padding: 0 15px;
     display: flex;
@@ -163,7 +163,6 @@ footer img {
     color: white;
 }
 
-/* Đảm bảo ô input và nút bấm khớp khít nhau */
 .navbar .form-control {
     height: 38px;
 }

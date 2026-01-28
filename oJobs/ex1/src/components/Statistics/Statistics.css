@@ -1,0 +1,39 @@
+.stats-section {
+  padding: 20px 0;
+  position: relative;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia 2 cột */
+  border: 1px solid var(--border-color);
+}
+
+.stat-card {
+  padding: 40px 20px;
+  text-align: center;
+  border: 0.5px solid var(--border-color);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar-right {
+  position: absolute;
+  right: -60px; /* Đẩy ra ngoài lề container */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-item {
+  border: 1px solid var(--border-color);
+  padding: 10px 5px;
+  font-size: 12px;
+  background: #fff;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+}

@@ -41,5 +41,4 @@ function AppNavbar() {
     </Navbar>
   );
 }
-
 export default AppNavbar;

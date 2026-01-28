@@ -36,7 +36,7 @@ function PizzaCard({ pizza }) {
                     </div>
 
                     <div className="d-flex gap-2">
-                        {/* 2. Gán sự kiện handleShow vào nút View Details */}
+                        
                         <Button 
                             variant="outline-dark" 
                             className="flex-grow-1 rounded-0 fw-bold"
@@ -51,7 +51,7 @@ function PizzaCard({ pizza }) {
                 </Card.Body>
             </Card>
 
-            {/* 3. Thành phần Modal hiển thị chi tiết */}
+            
             <Modal show={show} onHide={handleClose} centered size="lg">
                 <Modal.Header closeButton>
                     <Modal.Title className="fw-bold">{pizza.name}</Modal.Title>

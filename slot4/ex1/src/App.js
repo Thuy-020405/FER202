@@ -1,18 +1,14 @@
-// src/App.js
+
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'; 
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Import các thành phần từ đúng thư mục
 import AppNavbar from './components/AppNavbar';
 import Footer from './components/Footer';
 import HeroCarousel from './components/HeroCarousel'; 
 import BookingForm from './components/BookingForm';
 
-// Import các trang
 import PizzaList from './pages/PizzaList'; 
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';

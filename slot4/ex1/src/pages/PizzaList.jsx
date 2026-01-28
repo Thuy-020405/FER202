@@ -1,7 +1,7 @@
 // PizzaList.jsx dùng để hiển thị danh sách các pizza, dữ liệu của các p
 import React from 'react';
 import PizzaCard from '../components/PizzaCard';
-import { pizzaList as pizzaLists } from '../data/pizzaList'; // Import và đổi tên để khớp với hình ảnh
+import { pizzaList as pizzaLists } from '../data/pizzaList';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function PizzaList() {
