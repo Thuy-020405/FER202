@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 function TestUseState() {
-    // 1. State lưu trữ giá trị từ ô nhập liệu
+   
     const [username, setUsername] = useState('Thuy');
     const [age, setAge] = useState(18);
 
-    // 2. State lưu trữ thông báo hiển thị sau khi nhấn Submit
     const [message, setMessage] = useState('');
 
-    // 3. Hàm xử lý khi nhấn nút Submit
     const handleSubmit = () => {
         setMessage(`Hello, ${username}. You are ${age} years old.`);
     };
@@ -54,14 +52,14 @@ function TestUseState() {
                 {/* Dòng 3: Nút bấm Submit */}
                 <Row className="mb-3">
                     <Col md={6}>
-                        {/* Gán sự kiện click gọi hàm handleSubmit */}
+                
                         <Button variant="primary" onClick={handleSubmit}>
                             Submit
                         </Button>
                     </Col>
                 </Row>
 
-                {/* Dòng 4: Hiển thị message khi đã nhấn Submit */}
+             
                 {message && (
                     <Row className="mt-3">
                         <Col md={6}>
