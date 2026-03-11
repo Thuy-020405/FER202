@@ -1,0 +1,150 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "role": "admin"
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "Sci-Fi"
+    },
+    {
+      "id": "2",
+      "name": "Comedy"
+    },
+    {
+      "id": "3",
+      "name": "Drama"
+    },
+    {
+      "id": "4",
+      "name": "Horror"
+    },
+    {
+      "id": "5",
+      "name": "Romance"
+    },
+    {
+      "id": "6",
+      "name": "Action"
+    },
+    {
+      "id": "7",
+      "name": "Thriller"
+    },
+    {
+      "id": "8",
+      "name": "Animation"
+    },
+    {
+      "id": "9",
+      "name": "Fantasy"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "description": "Một kẻ trộm có khả năng xâm nhập vào giấc mơ để đánh cắp bí mật doanh nghiệp.",
+      "poster": "/images/inception-poster.jpg",
+      "genreId": "1",
+      "year": 2010,
+      "country": "USA",
+      "duration": 148
+    },
+    {
+      "id": "2",
+      "title": "The Dark Knight",
+      "description": "Batman phải đối mặt với Joker, kẻ muốn gây hỗn loạn tại thành phố Gotham.",
+      "poster": "/images/the-dark-knight-2008-movie-poster.avif",
+      "genreId": "6",
+      "year": 2008,
+      "country": "USA",
+      "duration": 152
+    },
+    {
+      "id": "3",
+      "title": "Interstellar",
+      "description": "Nhóm phi hành gia du hành qua hố đen để tìm kiếm hành tinh mới cho nhân loại.",
+      "poster": "/images/Interstellar.jpg",
+      "genreId": "1",
+      "year": 2014,
+      "country": "USA",
+      "duration": 169
+    },
+    {
+      "id": "4",
+      "title": "Parasite",
+      "description": "Sự giao thoa đầy bi kịch giữa một gia đình nghèo và một gia đình giàu có.",
+      "poster": "/images/parasite_poster.jpeg",
+      "genreId": "7",
+      "year": 2019,
+      "country": "South Korea",
+      "duration": 132
+    },
+    {
+      "id": "5",
+      "title": "Spider-Man: Across the Spider-Verse",
+      "description": "Miles Morales du hành qua đa vũ trụ và gặp gỡ nhiều Người Nhện khác.",
+      "poster": "/images/spider-man-poster-1-comp.jpg",
+      "genreId": "8",
+      "year": 2023,
+      "country": "USA",
+      "duration": 140
+    },
+    {
+      "id": "6",
+      "title": "Avengers: Endgame",
+      "description": "Các siêu anh hùng tập hợp để đảo ngược thiệt hại do Thanos gây ra.",
+      "poster": "/images/avengers-endgame.jpg",
+      "genreId": "6",
+      "year": 2019,
+      "country": "USA",
+      "duration": 181
+    },
+    {
+      "id": "7",
+      "title": "Your Name",
+      "description": "Hai thiếu niên xa lạ bỗng nhiên bị hoán đổi thân xác cho nhau một cách kỳ lạ.",
+      "poster": "/images/Your-Name.webp",
+      "genreId": "8",
+      "year": 2016,
+      "country": "Japan",
+      "duration": 106
+    },
+    {
+      "id": "8",
+      "title": "The Conjuring",
+      "description": "Đôi vợ chồng nhà ngoại cảm giúp đỡ một gia đình đang bị ám bởi thế lực hắc ám.",
+      "poster": "/images/The-Conjuring.webp",
+      "genreId": "4",
+      "year": 2013,
+      "country": "USA",
+      "duration": 112
+    },
+    {
+      "id": "9",
+      "title": "La La Land",
+      "description": "Chuyện tình giữa một nhạc sĩ Jazz và một nữ diễn viên trẻ tại Hollywood.",
+      "poster": "/images/LaLaLand.jpg",
+      "genreId": "5",
+      "year": 2016,
+      "country": "USA",
+      "duration": 128
+    },
+    {
+      "id": "10",
+      "title": "The Godfather",
+      "description": "Câu chuyện kinh điển về đế chế tội phạm Mafia gốc Ý tại Mỹ.",
+      "poster": "/images/TheGodfather.jpg",
+      "genreId": "3",
+      "year": 1972,
+      "country": "USA",
+      "duration": 175
+    }
+  ]
+}
